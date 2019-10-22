@@ -1,0 +1,49 @@
+.container {
+    margin: 10px 0 10px 100px;
+
+}
+
+.header {
+    margin-left: 30px;
+    font-size: 27px;
+    font-family: sans-serif;
+    line-height: 23px;
+}
+
+.hr {
+    background-color: rgb(223, 223, 223);
+    width: 97%;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.form-group {
+    margin-left: 30px;
+    display: flex;
+}
+
+.butAdd {
+    width: 250px;
+    margin-left: 20px;
+}
+
+table {
+    margin-left: 30px;
+    width: 97%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+.save {
+    margin-left: 15px;
+}

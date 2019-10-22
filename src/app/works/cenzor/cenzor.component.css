@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.box{
+   width: 600px;
+   min-height: 270px;
+   background-color: rgb(248, 246, 246);
+   margin: 100px auto;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.btn-warning{
+    width: 82px;
+    height: 37px;
+    margin: 0px 10px;
+}
+.btn-danger{
+    width: 82px;
+    height: 37px;
+    margin: 0px 10px;
+}
+
+.btn-success{
+    width: 562px;
+    height: 35px;
+}
+
+p{
+   font-weight: bold;
+   font-size: 20px;
+}
+
+span{
+  color: rgb(228, 5, 5);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+[name= 'f1']{
+   width: 600px;
+   height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+[name="writeWord"]{
+   width: 361px;
+   padding-left: 25px;
+}
+
+textarea{
+   width: 560px;
+   height: 100px;
+   border-radius: 5px;
+   padding: 10px 25px;
+}
+
+.text{
+   color: black;
+   font-size: 25px;
+   font-family: sans-serif;
+}

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="header">
+    <p>Plan you Day!</p>
+    <p>User: Ivan Ivanov. Count of Task {{counter}}</p>
+  </div>
+  <div class="hr"></div>
+  <form>
+    <div class="form-group">
+      <input [(ngModel)]="userText" id="userText" type="text" name="userText" class="form-control">
+      <button type="button" class="btn btn-success butAdd" (click)="addUser()">Add</button>
+    </div>
+  </form>
+  <div class="hr" style="margin-top: 15px"></div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Task</th>
+        <th scope="col">Check</th>
+        <th scope="col">DONE/IN PROGRESS</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr *ngFor="let user of users; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{user.task}}</td>
+        <td><input (click)="changeStatus(user)"  [disabled]="checkbox" type="checkbox"></td>
+        <td *ngIf="user.check" class="text-success">DONE</td>
+        <td *ngIf="!user.check" class="text-danger">in Progress</td>
+
+        <td>
+          <button type="button" class="btn btn-warning" (click)="edit(i)">edit</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="delete(i)" *ngIf="!disable"  [disabled]="!user.check">delete</button>
+          <button type="button" class="btn btn-danger disabled"  *ngIf="disable"  >delete</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="box" *ngIf="hideBox">
+    <input type="text" [(ngModel)]="userEdit" name="userEdit">
+    <button class="btn btn-success save" (click)="save(i)">save</button>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>

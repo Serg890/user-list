@@ -1,0 +1,18 @@
+
+    <div class="box">
+        <span class="text">Bad words:</span>
+        <span class="badWords" *ngFor="let word of words; let i=index">  {{words[i] + ' '}}</span>
+        <form action="" name="f1">
+            <input class="form-control" type="text" name="writeWord" placeholder="word here..." [(ngModel)] = "writeWord">
+            <button class="btn btn-warning"  (click) = "add()">Add</button>
+            <button class="btn btn-danger"  (click) = "reset()">Reset</button>
+            <textarea class="form-control" name="wordsStr" [(ngModel)] = "wordsStr" id="" cols="30" rows="10" placeholder="text here..."></textarea>
+            <button class="btn btn-success"  (click) = "cenzor()">Cenzor</button>
+ 
+ 
+        </form>
+        
+    </div>
+ 
+
+<router-outlet></router-outlet>

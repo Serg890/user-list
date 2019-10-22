@@ -1,0 +1,34 @@
+.container{
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1, .box2, .box3{
+    width: 302px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid rgb(224, 224, 224);
+}
+.image1{
+    background-image: url(Screenshot_1.png);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+}
+.image2{
+    background-image: url(Screenshot_2.png);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+}
+.image3{
+    background-image: url(Screenshot_3.png);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+}

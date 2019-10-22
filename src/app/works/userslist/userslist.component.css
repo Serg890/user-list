@@ -1,0 +1,29 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.form-control{
+    width: 430px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+label{
+    margin-left: 30px;
+}
+.btn{
+    margin-left: 30px;
+}
+.table{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.btn{
+    margin: 0;
+}
+#but1,#but2{
+    margin-left: 30px;
+    width: 430px;
+}
